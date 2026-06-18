@@ -16,7 +16,7 @@ export default function ServicesMarquee() {
     const marqueeItems = [...SERVICES, ...SERVICES];
 
     return (
-        <div className="w-full bg-linear-to-r from-[#4479d4] to-[#3b6bc2] text-white py-4 overflow-hidden whitespace-nowrap flex items-center shadow-inner">
+        <div className="w-full bg-linear-to-r from-[#043892] to-[#163f8c] text-white py-4 overflow-hidden whitespace-nowrap flex items-center shadow-inner">
             {/* Contenedor que ejecuta la animación */}
             <div className="flex animate-marquee space-x-12 shrink-0 pr-12">
                 {marqueeItems.map((service, index) => (
