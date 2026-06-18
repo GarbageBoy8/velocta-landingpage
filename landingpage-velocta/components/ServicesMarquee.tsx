@@ -22,8 +22,8 @@ export default function ServicesMarquee() {
                 {marqueeItems.map((service, index) => (
                     <div key={index} className="flex items-center space-x-12 text-sm md:text-lg font-medium tracking-wide">
                         <span>{service}</span>
-                        {/* El separador visual de la imagen image_fedbc4.png */}
-                        <span className="text-blue-300/60 font-light text-xl">/</span>
+                        {/* El separador visual de los servicios */} 
+                        <span className="text-blue-300 font-light text-xl">/</span>
                     </div>
                 ))}
             </div>

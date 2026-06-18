@@ -2,7 +2,7 @@
 export default function Hero() {
     return (
         <section 
-            className="relative flex flex-col items-center justify-center text-center min-h-175 py-24 bg-zinc-950 text-white px-4 bg-cover bg-center overflow-hidden"
+            className="relative flex flex-col items-center justify-center text-center min-h-172 py-24 bg-zinc-950 text-white px-4 bg-cover bg-center overflow-hidden"
             style={{ 
                 // Asegúrate de que el nombre del archivo coincida con el que guardaste en tu carpeta public
                 backgroundImage: `url('/imagen-logo.png')` 

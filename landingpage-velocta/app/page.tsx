@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 
 // Aquí irías importando los demás: 
 import ServicesMarquee from "@/components/ServicesMarquee";
+import WhyChooseUs from "@/components/WhyChoseUs";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       {/* Tu componente Hero */}
       <Hero />
       <ServicesMarquee />
+      <WhyChooseUs />
       {/* El día de mañana solo agregas o quitas componentes aquí abajo */}
       {/* <Services /> */}
       {/* <ContactForm /> */}
