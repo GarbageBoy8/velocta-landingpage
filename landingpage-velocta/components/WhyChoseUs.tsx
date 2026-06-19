@@ -1,9 +1,12 @@
 // components/WhyChooseUs.tsx
+"use client"; // Necesario en Next.js App Router para usar animaciones del lado del cliente
+
+import { motion } from "framer-motion";
 
 export default function WhyChooseUs() {
     return (
         <section className="relative w-full bg-[#f8fafc] text-zinc-900 py-20 px-4 md:px-8 overflow-hidden">
-            {/* Efectos de luces de fondo sutiles como en la imagen */}
+            {/* Efectos de luces de fondo sutiles */}
             <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-blue-100/40 rounded-full blur-3xl pointer-events-none" />
             <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-indigo-100/30 rounded-full blur-3xl pointer-events-none" />
 
@@ -24,30 +27,44 @@ export default function WhyChooseUs() {
                     
                     {/* COLUMNA IZQUIERDA: Composición de imágenes superpuestas */}
                     <div className="relative w-full max-w-[500px] mx-auto aspect-[4/3] lg:max-w-none">
-                        {/* Imagen de fondo principal (La más grande) */}
-                        <div className="absolute top-0 left-0 w-[85%] h-[85%] rounded-xl overflow-hidden shadow-xl border border-zinc-200/50">
+                        
+                        {/* 1. Imagen de fondo principal (Aparece primero) */}
+                        <motion.div 
+                            initial={{ opacity: 0, y: -60 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, amount: 0.2 }}
+                            transition={{ duration: 0.7, ease: "easeOut" }}
+                            className="absolute top-0 left-0 w-[85%] h-[85%] rounded-xl overflow-hidden shadow-xl border border-zinc-200/50"
+                        >
                             <img 
-                                src="/images/developer-main.jpg" 
+                                src="/desarrollo-software.jpg" 
                                 alt="Desarrollo de software de alto rendimiento" 
                                 className="w-full h-full object-cover"
                             />
-                            {/* Tarjeta Azul Flotante (99.9%) */}
+                            {/* Tarjeta Azul Flotante (99.9%) - Se mueve junto con la imagen principal */}
                             <div className="absolute bottom-6 left-6 bg-gradient-to-br from-[#4479d4] to-[#3561b0] text-white p-6 rounded-xl shadow-lg max-w-[180px] z-20">
                                 <span className="text-3xl md:text-4xl font-bold block mb-1">99.9%</span>
                                 <p className="text-xs text-blue-100 font-light leading-relaxed">
                                     De disponibilidad y optimización en procesos internos.
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        {/* Imagen secundaria superpuesta al frente (La pequeña de la derecha) */}
-                        <div className="absolute bottom-0 right-0 w-[50%] h-[60%] rounded-xl overflow-hidden shadow-2xl border-2 border-white z-10 transition-transform hover:scale-105 duration-300">
+                        {/* 2. Imagen secundaria superpuesta al frente (Aparece un pelín después con el delay) */}
+                        <motion.div 
+                            initial={{ opacity: 0, y: -60 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, amount: 0.2 }}
+                            // Agregamos un delay de 0.2 segundos para el efecto cascada
+                            transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+                            className="absolute bottom-0 right-0 w-[50%] h-[60%] rounded-xl overflow-hidden shadow-2xl border-2 z-10 transition-transform hover:scale-105 duration-300"
+                        >
                             <img 
-                                src="/images/code-detail.jpg" 
+                                src="/lineas-codigo.jpg" 
                                 alt="Líneas de código limpio y arquitectura" 
                                 className="w-full h-full object-cover"
                             />
-                        </div>
+                        </motion.div>
                     </div>
 
                     {/* COLUMNA DERECHA: Copys persuasivos de venta */}
