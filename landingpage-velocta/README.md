@@ -34,3 +34,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+####### LO QUE LE FALTA A LANDINGPAGE ############
+1. Formulario de contacto- donde el usuario enviara sus datos  para que nosotros le enviemos un correo electronico 
+2. Checar que todos los texto sean a corde a lo que estamos ofreciendo y la experiencia que tenemos
+3. Checar las imagenes (si todos estan de acuerdo con dejar esa imagen pues ya no se mueve )
+4. Crear un navbar donde estara nuestro logo junto con la secciones de la landignpage se estaran enlazando ahi mismo en la langing page 
+5. linkear los botones al apartado de contacto que se encontrara hasta la ultima parte de la landingpage
+el footer yo me lo chingo 
