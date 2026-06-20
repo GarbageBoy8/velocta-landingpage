@@ -33,7 +33,7 @@ export default function WhyChooseUs() {
                             initial={{ opacity: 0, y: -60 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, amount: 0.2 }}
-                            transition={{ duration: 0.7, ease: "easeOut" }}
+                            transition={{ duration: 0.9, ease: "easeOut" }}
                             className="absolute top-0 left-0 w-[85%] h-[85%] rounded-xl overflow-hidden shadow-xl border border-zinc-200/50"
                         >
                             <img 
@@ -56,7 +56,7 @@ export default function WhyChooseUs() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, amount: 0.2 }}
                             // Agregamos un delay de 0.2 segundos para el efecto cascada
-                            transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+                            transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
                             className="absolute bottom-0 right-0 w-[50%] h-[60%] rounded-xl overflow-hidden shadow-2xl border-2 z-10 transition-transform hover:scale-105 duration-300"
                         >
                             <img 

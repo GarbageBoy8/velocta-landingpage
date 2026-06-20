@@ -29,7 +29,7 @@ export default function CTA() {
 
                 {/* COLUMNA IZQUIERDA */}
                 <div className="lg:col-span-6 flex flex-col justify-center">
-                    <span className="text-xs md:text-sm font-semibold tracking-[0.3em] uppercase text-blue-400 block mb-2">
+                    <span className="text-xs md:text-sm font-semibold tracking-[0.3em] uppercase text-blue-600 block mb-2">
                         ¿Listo para dar el siguiente paso?
                     </span>
                     <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-white leading-tight">
